@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html class="ui-mobile-rendering">
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/jquery.mobile-1.3.2.css" />
+    <link rel="stylesheet" href="themes/globant.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- The Templates -->
+    <script type="text/template" id="home">
+
+        <div data-role="header">
+		  <h1>Movie</h1>
+        </div><!-- /header -->
+        <div data-role="content" id="my-controlgroup">
+            <div data-role="fieldcontain" class="center">
+                <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                    <input type="radio" name="radio-action" id="nowPlaying" value="NowPlaying" checked="checked">
+                    <label for="nowPlaying">Now Playing</label>
+                    <input type="radio" name="radio-action" id="comingSoon" value="ComingSoon">
+                    <label for="comingSoon">Coming Soon</label>
+                    <input type="radio" name="radio-action" id="az" value="az">
+                    <label for="az">A-Z</label>
+                </fieldset>
+            </div>
+            <ul data-role="listview" data-inset="true" data-filter="true" id="movie">
+                    <li>
+						<img src="http://images.kendomobilebook.com/movies/ironman3.jpg" />
+						<h2>Name</h2>
+							<p class="desc">Genre,Length mins <span>Rating</span> 
+							LeadStars
+							</p>
+					</li>
+            </ul>
+        </div>
+        
+        <div data-role="footer" class="nav-glyphish-example" data-id="foo1" data-position="fixed" data-theme="b">
+        <div data-role="navbar" class="nav-glyphish-example">
+           <ul> 
+                <li><a href="#" id="favorite" data-icon="custom" class="ui-btn-active ui-state-persist">Movies</a></li>
+                <li><a href="#" id="contacts" data-icon="custom">Trailers</a></li> 
+                <li><a href="#" id="keypad" data-icon="custom">My Account</a></li> 
+                <li><a href="#" id="voicemail" data-icon="custom">About</a></li> 
+            </ul> 
+        </div>
+    </div><!-- /footer -->
+    </script>
+	
+    </script>
+
+    <!-- The Scripts -->
+    
+    <script src="lib/jquery-1.9.1.min.js"></script>
+    <script src="js/jqm-config.js"></script>
+    <script src="lib/jquery.mobile-1.3.2.min.js"></script>
+    <script src="lib/underscore-min.js"></script>
+    <script src="lib/backbone-min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body></body>
+
+</html>
