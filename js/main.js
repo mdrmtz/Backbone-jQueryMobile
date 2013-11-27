@@ -36,14 +36,14 @@ window.HomeView = Backbone.View.extend({
 			 if (data.length >0){
 				 //Insert values
 				 $.each(data, function (i, value) {
-					 $('#movie').append('<a href="#"><li class="clearfix ui-li ui-li-static ui-btn-up-c ui-corner-top">' +
+					 $('#movie').append('<li class="clearfix ui-state-default ui-li ui-li-static ui-btn-up-c ui-corner-top"><a href="#">' +
 										'<img src="' + value.Image + '" class="thumbnail">' +
 										'<h2>' +	value.Name + '</h2><p class="desc">' +
 															  	value.Genre + ',' +
 															  	value.Length + ' mins ' +
 															  	'<span class="rating">' + value.Rating+'</span><br/>'+
 																value.LeadStars +
-									    '</p></li></a>');
+									    '</p></a></li>');
 				  });}
 			 }else{
 				  switch (data.respuesta){
@@ -60,6 +60,8 @@ window.HomeView = Backbone.View.extend({
 			$('#msjError').popup( "open" );
 		  }//end error
 		 });//end ajax
+		 $('#listview').listview('option', 'filter', true);
+    	 $('#listview').trigger("listviewcreate");
 	}
     
 });
@@ -71,6 +73,8 @@ var AppRouter = Backbone.Router.extend({
     },
 
     initialize:function () {
+	//	 $( "#movie" ).sortable();
+    //	 $( "#movie" ).disableSelection();
         this.firstPage = true;
     },
 

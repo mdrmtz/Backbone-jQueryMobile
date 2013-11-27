@@ -8,4 +8,9 @@ $(document).bind("mobileinit", function () {
     $('div[data-role="page"]').on('pagehide', function (event, ui) {
         $(event.currentTarget).remove();
     });
+	
+
+	$( "#movie" ).sortable();
+	$( "#movie" ).disableSelection();
+	
 });

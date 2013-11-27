@@ -23,13 +23,23 @@
                     <label for="az">A-Z</label>
                 </fieldset>
             </div>
-            <ul data-role="listview" data-inset="true" data-filter="true" id="movie">
+			
+            <ul id="movie" data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Search">
                     <li>
-						<img src="http://images.kendomobilebook.com/movies/ironman3.jpg" />
+						<a href="#"><img src="http://images.kendomobilebook.com/movies/ironman3.jpg" />
 						<h2>Name</h2>
 							<p class="desc">Genre,Length mins <span>Rating</span> 
 							LeadStars
 							</p>
+						</a>	
+					</li>
+					<li>
+						<a href="#"><img src="http://images.kendomobilebook.com/movies/ironman3.jpg" />
+						<h2>Iron Man</h2>
+							<p class="desc">SCI-FI,00:00 mins <span>PG</span> 
+							LeadStars
+							</p>
+						</a>
 					</li>
             </ul>
         </div>
@@ -45,17 +55,17 @@
         </div>
     </div><!-- /footer -->
     </script>
-	
-    </script>
 
     <!-- The Scripts -->
     
     <script src="lib/jquery-1.9.1.min.js"></script>
+	<script src="lib/jquery-ui.js"></script>
     <script src="js/jqm-config.js"></script>
     <script src="lib/jquery.mobile-1.3.2.min.js"></script>
     <script src="lib/underscore-min.js"></script>
     <script src="lib/backbone-min.js"></script>
     <script src="js/main.js"></script>
+	<script src="js/dragdrop.js"></script>
 </head>
 
 <body></body>
